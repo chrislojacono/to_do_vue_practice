@@ -1,16 +1,22 @@
 <template>
   <div id="app">
+    <Header/>
+    <AddToDo />
     <Todos v-bind:todos='todos' v-on:del-todo="deleteTodo"/>
   </div>
 </template>
 
 <script>
-import Todos from './components/Todos.vue'
+import Todos from './components/Todos.vue';
+import Header from './components/layout/Header.vue';
+import AddToDo from './components/AddToDo.vue';
 
 export default {
   name: 'App',
   components: {
-    Todos
+    Todos,
+    Header,
+    AddToDo,
   },
   data() {
     return {
@@ -50,5 +56,17 @@ export default {
   body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.4;
+  }
+
+  .btn {
+    display: inline-block;
+    border: none;
+    background: #555;
+    color: #fff;
+    padding: 7px 20px;
+    cursor: pointer;
+  }
+  .btn:hover {
+    background: #666;
   }
 </style>
