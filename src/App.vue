@@ -60,17 +60,25 @@ export default {
   body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.4;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  #app {
+    width: 100%;
   }
 
   .btn {
     display: inline-block;
     border: none;
-    background: #555;
+    background: rgb(3, 187, 43);
     color: #fff;
     padding: 7px 20px;
     cursor: pointer;
   }
   .btn:hover {
-    background: #666;
+    background: rgb(67, 214, 67);
   }
 </style>
