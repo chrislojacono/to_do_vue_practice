@@ -24,9 +24,11 @@ export default {
 
 <style scoped>
   .todo-item {
-    background: #f4f4f4;
+    background: #eebde3;
     padding: 10px;
     border-bottom: 1px #ccc dotted;
+    border-radius: 3rem;
+    margin: 2px;
   }
 
   .is-complete {
