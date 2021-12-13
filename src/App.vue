@@ -1,8 +1,10 @@
 <template>
   <div id="app">
     <Header/>
+    <div class="main-body">
     <AddTodo v-on:add-todo="addTodo"/>
     <Todos v-bind:todos='todos' v-on:del-todo="deleteTodo"/>
+    </div>
   </div>
 </template>
 
@@ -68,6 +70,10 @@ export default {
   }
   #app {
     width: 100%;
+  }
+  .main-body{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
   }
 
   .btn {

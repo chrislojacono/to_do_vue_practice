@@ -29,11 +29,16 @@ export default {
     padding: 10px;
     border-radius: 3rem;
     margin: 2px;
-    background: hsl(204 100% 5%);
+    /* background: hsl(204 100% 5%); */
     min-block-size: 100%;
     min-inline-size: 100%;
     box-sizing: border-box;
     display: grid;
+    background: linear-gradient(
+      to left, 
+      hsl(203, 25%, 63%), 
+      hsl(204, 100%, 87%)
+    );
 
     font-family: system-ui;
     font-size: min(200%, 5vmin);
@@ -51,13 +56,7 @@ export default {
   .todo-text {
     font-family: 'Poppins', sans-serif;
     margin: 5px;
-    background: linear-gradient(
-      to right, 
-      hsl(98 100% 62%), 
-      hsl(204 100% 59%)
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: black;
 
   }
   input{
