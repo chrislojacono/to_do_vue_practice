@@ -9,7 +9,7 @@
 <script>
 import Todos from './components/Todos.vue';
 import Header from './components/layout/Header.vue';
-import AddTodo from './components/AddTodo.vue';
+import AddTodo from './components/AddToDo';
 import axios from 'axios';
 
 export default {
